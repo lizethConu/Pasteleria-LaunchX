@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv =" X-UA-Compatible" content= "IE=edge">
+        <meta name=""viewport" content=""width=device-width, initial-scale="1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="style-cliente.css">
+       
+        <title> Pastelería Conu</title>
+    </head>
+    <body>
+        <header class="header">
+            <!--Headings-->
+            <div class="logo-box">
+                <img src="img/logo1.png" alt="Logo" class="logo">
+            </div>
+            <div class="text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary-1">Pastelería Conu</span>
+                    <span class="heading-primary-2">Donde la felicidad empieza</span>
+                </h1>
+                <a href="#pedidos" class="btn btn-white">Haga su pedido</a>
+            </div>            
+        </header>
+        
+        <!--Galeria de fotos-->
+        <div class="fotos-box">
+            <span class="text-galeria-fotos"> Conoce algunos de nuestros productos</span>
+            <div class="galeria">
+                <div class="img">
+                    <img src="img/pastel1.webp" alt="Pastel1" class="pastel1">
+                </div>
+                <div class="img">
+                    <img src="img/pastel2.jpg" alt="Pastel2" class="pastel2">
+                </div>
+                <div class="img">
+                    <img src="img/pastel3.webp" alt="Pastel3" class="pastel3">
+                </div>
+            </div>
+        </div>
+
+        <!--titulo de lista de precios-->
+        <div class="lista-precios-text">
+            <a name="pedidos"></a>
+            <h2>Lista de precios</h2>
+        </div>
+        
+        <!--contenedor de lista de precios-->
+        <div  class="lista-precios-contenedor">            
+            <div class="lista">
+                <!--lista de precios de sabores-->
+                <p>Sabores</p>        
+                <ul>
+                    <li>Vainilla.......$200</li>
+                    <li>Chocolate......$250</li>
+                    <li>Frutos rojos...$350</li>
+                    <li>Nuez...........$300</li>
+                    <li>Red velvet.....$400</li>
+                </ul>
+            </div>            
+
+            <div class="lista">
+                <!--lista de precios de sabores-->
+                <p>Adornos</p>        
+                <ul>
+                    <li>Buttercream <em>Americano</em>.....$200</li>
+                    <li>Fondant...................$250</li>
+                    <li>Buttercream <em>Suizo</em>.........$250</li>
+                    <li>Buttercream <em>Italiano</em>......$200</li>
+                    <li>Buttercream <em>Frances</em>.......$270</li>
+                </ul>
+            </div>            
+        </div>        
+
+        <!--Formulario de pedido de pastel-->
+        <div class="container">
+            <!--Seleccion de sabores-->
+            <div class="container">
+                <h3>Seleccionar uno mas sabores</h3>
+                <input type="checkbox" id="sabor-vainilla" name="vainilla" value="Vainilla">
+                <label for="vainilla">Vainilla</label>
+    
+                <input type="checkbox" id="sabor-chocolate" name="chocolate" value="Chocolate">
+                <label for="chocolate">Chocolate</label>
+    
+                <input type="checkbox" id="sabor-frutos" name="frutos" value="Frutos">
+                <label for="frutos">Frutos Rojos</label>
+    
+                <input type="checkbox" id="sabor-nuez" name="nuez" value="Nuez">
+                <label for="nuez">Nuez</label>
+            
+                <input type="checkbox" id="sabor-red" name="red" value="Red">
+                <label for="red">Red Velvet</label>
+
+                <!--Seleccion de adornos-->
+                <h3>Seleccionar uno mas adornos</h3>
+                <input type="checkbox" id="cream-americano" name="americano" value="Americano">
+                <label for="americano">Buttercream <em>Americano</em></label>
+ 
+                <input type="checkbox" id="cream-fondant" name="fondant" value="Fondant">
+                <label for="fondant"> Fondant </label>
+                
+               <input type="checkbox" id="cream-suizo" name="suizo" value="Suizo">
+                <label for="suizo">Buttercream <em>Sizo</em></label>
+ 
+                <input type="checkbox" id="cream-italiano" name="italiano" value="Italiano">
+                <label for="italiano">Buttercream <em>Italiano</em></label>
+         
+                <input type="checkbox" id="cream-frances" name="frances" value="Frances">
+                <label for="frances">Buttercream <em>Frances</em></label>
+            </div>
+          
+            <!--Datos personales-->
+            <div class="personal-data">
+                <h3>Datos Personales</h3>
+                <label for="nombre">Nombre completo </label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            
+            <div  class="personal-data">
+                <label for="telefono">Telefono Celular </label>
+                <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="###-#######" pattern="[0-9]{3}-[0-9]{7}" required>
+            </div>
+
+            <div  class="personal-data">
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" name="correo">
+            </div>
+            
+            <div  class="personal-data">
+                <label for=""descripcion>Descripción general del pastel</label><br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Escriba la descripcion de su pastel"></textarea>
+                <span> 
+                    <a href="" class="boton btn btn-white">Ordenar</a>
+                </span>
+            </div>            
+        </div>
+
+    </body>
+    <footer>
+        <span>Domicilio: Zafiro #58 colonia Centro Tepic, Nayarit Mexico</span>
+        <span>Tel: 311-9003457</span>
+        <span>Horario de atención de lunes a domingo de 9:00 am a 8pm</span>
+    </footer>
+</html>
